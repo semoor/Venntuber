@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.semmi.videodowner"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+    aaptOptions {
+        ignoreAssetsPattern "!x86"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.mcxiaoke.volley:library:1.0.6'
+    implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'com.google.android.gms:play-services-ads:9.0.0'
+    implementation project(path: ':jcplayer')
+    implementation 'pub.devrel:easypermissions:1.1.1'
+    implementation "com.liulishuo.okdownload:okdownload:1.0.3-SNAPSHOT"
+    implementation "com.liulishuo.okdownload:sqlite:1.0.3-SNAPSHOT"
+    implementation "com.liulishuo.okdownload:okhttp:1.0.3-SNAPSHOT"
+    implementation 'com.github.castorflex.smoothprogressbar:library:1.3.0'
+    implementation 'com.github.castorflex.smoothprogressbar:library:1.0.1-SNAPSHOT@aar'
+    implementation 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    implementation 'io.github.kobakei:ratethisapp:1.2.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.airbnb.android:lottie:2.5.1'
+    implementation 'com.writingminds:FFmpegAndroid:0.3.2'
+}

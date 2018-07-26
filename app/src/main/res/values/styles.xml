@@ -1,0 +1,45 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/w</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+    </style>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#fafaf9</item>
+        <item name="android:progressTint">#151513</item>
+        <item name="android:colorControlActivated">@android:color/black</item>
+    </style>
+    <style name="Am" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+    <style name="ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+    </style>
+
+    <style name="GPlusProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">12dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">1</item>
+        <item name="spb_interpolator">spb_interpolator_linear</item>
+        <item name="spb_colors">@array/colors</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="AppTheme.Full">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ff000002"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/yut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/as"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+
+            style="@style/GPlusProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/as"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff000002"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ff000002"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/w1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/gr"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="Video Watch"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/ay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="top|center_horizontal"
+                    android:lines="2"
+                    android:text="360p 14.68MB"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/w11"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/gr"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="2"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="Video Download"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/ay11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="top|center_horizontal"
+                    android:lines="2"
+                    android:text="360p 14.68MB"
+                    android:textColor="#050505"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff000002"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/w2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/gr"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center"
+                    android:text="Image Download"
+                    android:textColor="#050505"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
